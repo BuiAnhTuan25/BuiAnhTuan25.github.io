@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile - Bùi Anh Tuấn</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      /* body {
+        background-color: #bcdee7;
+        position: fixed;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+      } */
+
+      header {
+        text-align: center;
+      }
+
+      h1 {
+        color: #032055;
+      }
+
+      p {
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      li {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      a:hover > img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .profile {
+        background-image: url(https://allimages.sgp1.digitaloceanspaces.com/photographercomvn/2021/01/1610597472_567_Top-50-hinh-nen-background-don-gian-va-dep-nhat.jpg);
+        background-size: cover;
+        image-rendering: pixelated;
+        width: 35%;
+        height: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2%;
+        -webkit-animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+            forwards,
+          moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+          moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+          materia_landscape 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+        animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+            forwards,
+          moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+          moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+          materia_landscape 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+      }
+
+      .profile-social-links {
+        width: 100%;
+        float: none;
+        display: block;
+        padding: 15px 20px;
+        text-align: center;
+        opacity: 1;
+        box-sizing: border-box;
+        -webkit-animation: moveIn 1s 3.1s ease forwards;
+        animation: moveIn 1s 3.1s ease forwards;
+      }
+
+      .profile-bio {
+        color: #032055;
+        margin-left: 15%;
+        width: auto;
+        height: auto;
+        padding: 15px 20px 30px 20px;
+        display: block;
+        float: none;
+      }
+
+      .avatar {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      @-webkit-keyframes init {
+        0% {
+          margin-top: 30%;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes init {
+        0% {
+          margin-top: 30%;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted #bcdee7;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        background-color: #bcdee7;
+        color: #032055;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #bcdee7 transparent transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+      body {
+        background-image: url(https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_960/https://namvietad.com/wp-content/uploads/2019/11/pngtree-ppt-minimalistic-geometric-background-backgroundppt-template-backgroundsimplecool-image_54790.jpg);
+        background-size: cover;
+        image-rendering: pixelated;
+        position: fixed;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile">
+      <header>
+        <img class="avatar" src="avatar.jpg" />
+        <h1>Anh Tuấn Bùi</h1>
+      </header>
+      <div class="profile-bio">
+        <div>
+          <p>Họ và Tên:</p>
+          <span> Bùi Anh Tuấn</span>
+        </div>
+        <div>
+          <p>Ngày sinh:</p>
+          <span> 25/12/2000</span>
+        </div>
+        <div>
+          <p>Trường:</p>
+          <span>Đại học Xây dựng Hà Nội</span>
+        </div>
+
+        <div>
+          <p>Domain:</p>
+          <span> Web Backend</span>
+        </div>
+      </div>
+      <ul class="profile-social-links">
+        <li id="mySelect" value="0366260513">
+          <a class="tooltip">
+            <img
+              width="40"
+              height="40"
+              src="data:image/png;base64,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"
+            />
+            <span class="tooltiptext">0366260513</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip">
+            <img
+              width="40"
+              height="40"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADq0lEQVRoge2WXWgUVxiG3zOzk01tEhNIjInGFKNLwARpd91sViql1htvNBL0qhdCsVeJPwh6ZSQqURRRc1EIhQaEQkspWgqKhaISY6i7CaLSGiTU0l2jROJGjbvz9/VCIjPjbHb+khSd5+6cM9857zfnPed8gI+Pj4/P+wwzdiRCococz3czoq0AFgO4w4hOt96//+N8CpOvNW0nsH0gNAPIMMLPvCJ1sS/+eqr9TpdAIhSqFDluEMBqkzl/KhLFryJjY5k51A36LbxYFsRvAbSbDI8GZCmuTYLTjuZ4vhvm4gGgXQwGk0ONjWHv5OoRf28OK4KYhLl4AAgpgnBY26FLgBG1zboCUYMK3EjFoh2ulJqQikU7GIcbBDTMLgHbtO2AYbzawlpBMDqXao1ulPminfUDA5N2xWp52tJSluXVPhDtsBhSo21whsG3DnV+aEtAEUf+Xd8Ssx6jJx0Lf5LlKAmCVfGAQaMxAZtQPaeq11Px6AGylTyQjq/bRYwbBGiVGwVGC9mGAAFEx9Ot0daHFiw1Yxmy99fzotuBZF3stvOpClvKoWV0jEiLEtq2LoGTG4+tPfV5t5wLBHPOps9vKbeWkYllz0wvyXS/qIlo+3WLrDieIgCofPEYe64eUVdN/Gl6RuorSi0syS7KfNHOEklSXt8yhf/6kp6saf8/spDreVkTHFcFAMCvbRfe6DYVOFFSja7NZ7lfmrYTALKg1gTawiu5xCtOHXFjmSu5Mux/XvdGvJG8h1jheHwf+ZqNVjVR5/Wj2SJFLLa7OANW2o2ZQSRO6p2uEgbEklm/K3iNJurXs31t/cVPSmvHnYqxy7gamNw9tbygeMDiOzBRUo29bf1LrzVsGoVjS1njD/HDvzszKyryWcaI5YdM4Xh88+nBUH+s4y4DPK9IGZDpm6q61/Ny6UeSjTfR9kt8uXFrM5i8FoQhu7GzMKxAiVxSytbYDXRUStQOjjx8JKkbQDgBl5YioG+6fDJed3P4gZN4x6VEJJmUABxMxSM3Qew7ABU2p5gCYdfyoVs/ONUAuC7mgGWDiYuMyR/btNSwCiW8zKV4wIMEAHuWcmsZI66r0RksWMoTyxjxZAe05LGUZ5Yx4nkCwGtLTVdMfgZGvWDU66VljHhmISOrLz3IAeicq/lnmJMdmE/8BBaady6B9IKosAOxlLapT4Dh/LyKcQKn6jTqrtHSV88OPf+gHCB8CaB2XoUVJs2InS+WhK6FFuLj4+Pj8//hP6t7cYwGuNS3AAAAAElFTkSuQmCC"
+            />
+            <span class="tooltiptext">tuankid2k@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://www.facebook.com/anhtuanbui2k">
+            <img
+              width="40"
+              height="40"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFEklEQVRoge2ZW2gcVRjH/2c22SQ1aZLNRXNraFATvKFs0QdfTPTFiKCIQUwFwZQYkqIY8cELrKLFF2+0G4yVgpBgm4q0oO2DJvpgVUICKohtUFuSzcZoLrK7uezOzPn7kLRddmZ2ZjJJfGg+WHZ2zjnf/P7nfOc7c84CO7Zj17aJTfEyRF/TSvxuAM0SCIJsAlFFsJAECCQoGQVwgeQ4wZFL04FRhIT0+mhPAm77dLlO12Q3yf0kawCAJEgAWPte+xAmZRFKDug5Ijx9oCyyrQJuHIpX+JN4k8DTJPwWgNng0+4jBfKY7lNfi3ZWz225gFsHEk9KicMQDGQHdASfXmeeFD3RnorjWyIg2M/c1cJEn5SiwwjiGf5qHaB/JrfyIDqFumkCgv3ctXLd0mckHtxS+Kvtz/jy5ePRzuplOzbFAXzuNsMDQKu2itMI/er3LGC1MNG3zfBrZVI8UF5S+oEdX9YQumUw0U6JAS/wCoiWej/urc5FfbGCkjwFKZ1QdSKWIn6MpvDxTyuW7SX5xEJvzQnXApo+iZUJRTkPsHyj8HdW+vBecyH2FvssO+lcJIXHPl+08E0AWEhRNMZfNE+xliGkKOKQF/i7Kn0Yenh3Vvh0yxJ2gRzK1y05zW7eMbBcu75IbQjeJ4jD9xfB73OWpR3MmY7St6N7HAtQKXvoYYVtbchDbZFtfkgTkBUeJP1S0bvM2uYY7oSokIl2L9mmuS7XFHQypqN3OI5f/lavkKuSdvBrzyCfwhBfRZvQswpo2hu/h0TtRuFJ4PYKY78AwAvDcXw3lbRtb7FC1+y+GAnGgNF0n2bj3OwFniTKC4xu/1qSOLdReF7+LVsy/ZoJ2Od1kSryGyfvZEwHPcADACWCtgIkebMXeJJQTJJPPCm9wRMgZGOmX0OwkqjyAr9+aTBJR9kmax1SVGX6NQmh9W3ghuEtFMArPACwKNOj2Qi4cvzD/oAh5s1C6L76PEw8e73h/snfVvDS14tO4E1H15jviATJgBN4ACjOE6aTNtNyFaAk3zjg0bjmGJ5kPLO92SSecQpPsy5xaRPzmlN4CGDGVgCICa8T1o39vqA6ggcACVywFUBwzFW28ACvSeDPRc0R/Pr1WKYP4yQGR4zA1pP6ua9iyLncDetlRx8qMWw0fp5V8f5o/EodAFjViKQmncKDCkZsBVyaDozuqVqYAllnB08CZ/9YNZR9xBKIDAWzSzpOnV92M2EzO29SlQ3jmbzGORASEpKDTuCtyqzMAzwADJodRZq+tOs5Ikwi5eWVejPhCSZTqhY282sqYPpAWQTksc2CB4x1HMOTkMRRvNU47VgAANDvf4XknFv47CHkHp7EvC50d3tiAIh0FC+Q4qBbeLvFzSU8CHYh1Gh56Jt14xrtqThOoP9/hA/rb9x0MptP2533TGVlN8FTTuEtRbiEB/ClrkSet+OzPzpoE7ovT7aDPOPi4Wb8zuHJLzRlVxtCzZp3AQCindXLswU3PELBD+3h3Wei9PYEw5ov8ihC9ifTgNnrtJV1CnUO6Aq8M/2tAhyRRPlGFrIs8P8Q7LaL+Uxzfvq0bgu9NSeSSTaR7AOQdLMWWC1SEjiiKckmt/CAmxFIs/jLtfMAusvenTqkaegB2E6iziX8FIABVdXDVouUE9ucv1lDVHYXRPaRsoUSwe+fqWoN5Iv80gKfIgTw74qUwxeXFztOz31DcowCI6psGN+Mv1l3bMeudfsPP8EkRZOLDr8AAAAASUVORK5CYII="
+            />
+            <span class="tooltiptext">Anh Tuấn Bùi</span>
+          </a>
+        </li>
+
+        <!-- <li>
+          <a class="tooltip" href="https://twitter.com/AnhTuanBui2512">
+            <img
+              width="40"
+              height="40"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAE20lEQVRoge3YW2yTdRgG8Odta8GBzh3KoIOd7BzxiGICISCi3GDigQQmEYMYgk4JckEGKGAaTTSiaAwCTsF5gSEuiiEGvSIalwWIohciCE4YbMDKtnbrTh3t9z5ebMWNfB/raRsXfe6+Nf+3v6f/r/2WP5BOOumkk04SkbF408LdVx5UkRVULiRlGkAniYtUHlEba3xr8g5BhGZrsz6+VBBY574QvbYsULa/290XyvA3vCihVMFLqvyZYeVuQJeREBIACBJg/wVIgsRREa5qfm3Kyeja7O3NswXGJqr86690rx+2wN1fdX1BSuYpZ0Y5ysVIFj9tR4ubDjks4PR+sCV+4FraCW4leS+IRSQLSPjtevWelg3FzTcs4PmB45z+nlaAEwF8OSl/wuqfF0gkUXxR9bnxRui2WoAPx4aH2WsRIZa0VeYfHDzbZvaG4/w99w/gQXJlc2P3gZlVzEi0QKR34tok8d0gl9t49VjWtguvZL3X9DpIsSxAgXvwYIBPdo0P1pXtDZbFrffSIYINSeABsJHA9jAclwFZB/btin7JTQuIoZ3/L44Okhm083hpdXsFvDRdZ5Z8V+s8ErlJ4EFiOsmpAJoiEXkqsOnOjuh8U0jYbjQMxV8bNIHEbk9Bx6/F1f55sRQQG+9LEj/wd/7uIGd1vjH1zOD5pgXO/JPZAEiD+SCA5ENiyC/FewK1hZ8FFqOGdqsCpM2VPB5nx4nzkdaNBZeun29+K3hFCe658ScHgJwr4IHCQNvloqq2qsJPrzxRsKs9a/AoobYmiQfJdl/l5G4zquVzwLOv7XZbxPEHiRJTvEUxgCRxhorTAjYaQB7IJYnjAYJ1wY0Fc82cDqsC9c/nBD3VHctBHgaQESMe7H/ClkFYpkR0QeL4/teCVk7TW6i0uuO5u6qDNYDhAvACSV+M+GR+Kq3wAHntf5/rY7EDbFFyKWBbGscnPzJ4EArWWxUw3QGbho8CCN8MeBIQ4nhcBU6vcnWS+t3NgCcZ7go7j8VVAADE4Fsk+sYYDwhq4XX3xF2g/qWcvwCuH1M8ACq+tTLesAAAnFudvZPK9QAiY4In+2yRyDcJFwCA8xU5H0Iwn2TdKOMBYH+X13MlqQKFVS1TDDXuEOhGAl4q/KOBJ6E2MbYP57N8Ekdjh71HaXytlIkkABkVPATY17XZc2I437A7cPbl7A6lvDNat80APkgxtgxni6kAAFzMzdkG8NBo4AFAicreLZ7GlBVAuRiRHn1Wge9HGg/yYGhr0ecxuWIuAMBXObm7eY3raSVXkWgYCTzJU71qrLA61DJLYidzNbS7mi7PgU3mULkMwIwU4M9D5dGQt7ghHkrMOzAk5WKEpe9PKksBPJAavP2xePFAAjvg/uBSbtiBCirWApiUAvwRux2LuzeX+OK1xFwg7yNfCYQLCH2clGdI3joUkhBeobqjl7ZN8BYnfP46tAApU3e2LIoAFSBzQbpITCajp3Sp+cIScgLUV0NvltQmCjcvMJD8T5pyIoZjM4DVKcVD6qn6dkiL98ErmizeskA0ee83T1Anl0CxkuR8AJIAPqDKHwnZG9pS+FM8P5FJFxiczHfPZ9lucc4W6iwRzlQin2Q2BDlUjCfZSSIA0KeUk4D+rWBtr6fot1Qcz6eTTjrppDMi+Q8fgF/hmeYFBwAAAABJRU5ErkJggg=="
+            />
+            <span class="tooltiptext">AnhTuanBui2512</span>
+          </a>
+        </li> -->
+
+        <li>
+          <a class="tooltip" href="https://www.instagram.com/b_anh_tuan">
+            <img
+              width="40"
+              height="40"
+              src="data:image/png;base64,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"
+            />
+            <span class="tooltiptext">b_anh_tuan</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
